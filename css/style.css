@@ -65,13 +65,13 @@ figure > p {
 }
 
 figure section {
-	border: 1px solid red;
+	/* border: 1px solid red; (위치잡고 새롭게 위치 조절) top,margin-top 값 변경*/
 	width: 20vw;
 	height: 65vh;
 	position: absolute;
 	left: 50%;
-	top: 50%;
-	margin-top: -32vh;
+	top: 140%;
+	margin-top: -25vh;
 	margin-left: -10vw;
 }
 
@@ -99,4 +99,13 @@ figure section article .inner {
 	opacity: 0.6;
 	transform: scale(0.8);
 	border: 1px solid blue;
+}
+
+figure section article .inner {
+	transition: opacity 1s, transform 1s;
+}
+
+figure section article.on .inner {
+	opacity: 0.9;
+	transform: scale(1.1);
 }
